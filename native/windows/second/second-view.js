@@ -1,86 +1,96 @@
-import { SampleAppView } from '../sample-app-view.js'
+import { SampleAppView } from "../sample-app-view.js";
 
 export class SecondView extends SampleAppView {
-  constructor() {
-    super();
+	constructor() {
+		super();
 
-    this._eventsLog = document.getElementById('eventsLog');
-    this._infoLog = document.getElementById('infoLog');
-    this._copyEventsButton = document.getElementById('copyEvents');
-    this._copyInfoButton = document.getElementById('copyInfo');
-    this._hotkeyToggle = document.getElementById('hotkey-toggle');
-    this._hotkeySecondScreen = document.getElementById('hotkey-second-screen');
+		this._eventsLog = document.getElementById("eventsLog");
+		this._infoLog = document.getElementById("infoLog");
+		this._copyEventsButton = document.getElementById("copyEvents");
+		this._copyInfoButton = document.getElementById("copyInfo");
+		this._hotkeyToggle = document.getElementById("hotkey-toggle");
+		this._hotkeySecondScreen = document.getElementById("hotkey-second-screen");
 
-    this._copyEventsButton.addEventListener('click', e => this._copyEventsLog(e));
-    this._copyInfoButton.addEventListener('click', e => this._copyInfoLog(e));
-  }
+		this._copyEventsButton.addEventListener("click", (e) => this._copyEventsLog(e));
+		this._copyInfoButton.addEventListener("click", (e) => this._copyInfoLog(e));
+	}
 
-  // -- Public --
+	// -- Public --
 
-  // Add a line to the events log
-  logEvent(string, isHighlight) {
-    this._logLine(this._eventsLog, string, isHighlight);
-  }
+	// Add a line to the events log
+	logEvent(string, isHighlight) {
+		this._logLine(this._eventsLog, string, isHighlight);
+	}
 
-  // Add a line to the info updates log
-  logInfoUpdate(string, isHighlight) {
-    this._logLine(this._infoLog, string, isHighlight);
-  }
+	// Add a line to the info updates log
+	logInfoUpdate(string, isHighlight) {
+		// Send data to external REST endpoint
+		fetch("http://localhost:8000/update", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({ string: string, isHighlight: isHighlight }),
+		}).catch((error) => {
+			console.error("Failed to send log update to external endpoint:", error);
+		});
 
-  // Update toggle hotkey header
-  updateToggleHotkey(hotkey) {
-    this._hotkeyToggle.textContent = hotkey;
-  }
+		this._logLine(this._infoLog, string, isHighlight);
+	}
 
-  // Update second screen hotkey header
-  updateSecondHotkey(hotkey) {
-    this._hotkeySecondScreen.textContent = hotkey;
-  }
+	// Update toggle hotkey header
+	updateToggleHotkey(hotkey) {
+		this._hotkeyToggle.textContent = hotkey;
+	}
 
-  // -- Private --
+	// Update second screen hotkey header
+	updateSecondHotkey(hotkey) {
+		this._hotkeySecondScreen.textContent = hotkey;
+	}
 
-  _copyEventsLog() {
-    this._copyLog(this._eventsLog);
-  }
+	// -- Private --
 
-  _copyInfoLog() {
-    this._copyLog(this._infoLog);
-  }
+	_copyEventsLog() {
+		this._copyLog(this._eventsLog);
+	}
 
-  // Copy text from log
-  _copyLog(log) {
-    // Get text from all span children
-    const nodes = log.childNodes;
+	_copyInfoLog() {
+		this._copyLog(this._infoLog);
+	}
 
-    let text = '';
+	// Copy text from log
+	_copyLog(log) {
+		// Get text from all span children
+		const nodes = log.childNodes;
 
-    for (let node of nodes) {
-      if (node.tagName === 'PRE') {
-        text += node.innerText + "\n";
-      }
-    }
+		let text = "";
 
-    overwolf.utils.placeOnClipboard(text);
-  }
+		for (let node of nodes) {
+			if (node.tagName === "PRE") {
+				text += node.innerText + "\n";
+			}
+		}
 
-  // Add a line to a log
-  _logLine(log, string, isHighlight) {
-    const line = document.createElement('pre');
+		overwolf.utils.placeOnClipboard(text);
+	}
 
-    // Check if scroll is near bottom
-    const shouldAutoScroll =
-      log.scrollTop + log.offsetHeight >= log.scrollHeight - 10;
+	// Add a line to a log
+	_logLine(log, string, isHighlight) {
+		const line = document.createElement("pre");
 
-    if (isHighlight) {
-      line.className = 'highlight';
-    }
+		// Check if scroll is near bottom
+		const shouldAutoScroll = log.scrollTop + log.offsetHeight >= log.scrollHeight - 10;
 
-    line.textContent = string;
+		if (isHighlight) {
+			line.className = "highlight";
+		}
 
-    log.appendChild(line);
+		line.textContent = string;
 
-    if (shouldAutoScroll) {
-      log.scrollTop = log.scrollHeight;
-    }
-  }
+		log.appendChild(line);
+
+		if (shouldAutoScroll) {
+			log.scrollTop = log.scrollHeight;
+		}
+	}
 }
