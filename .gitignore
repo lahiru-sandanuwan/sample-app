@@ -3,3 +3,4 @@ yarn.lock
 temp/
 .idea/
 __pycache__/
+venv/

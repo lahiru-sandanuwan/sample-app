@@ -19,6 +19,7 @@ app.add_middleware(
 latest_data = {}
 connected_clients = set()
 
+
 class GameData(BaseModel):
     health: int
     weapon: str
@@ -30,27 +31,33 @@ async def update(request: Request):
     body = await request.json()
     # data = body["string"]
     data = """
-    {"info":{"game_info":{"scene":"CharacterSelectPersistentLevel"}},"feature":"game_info"}
+    
+    {"info":{"match_info":{"roster_1":"{\"name\":\"Chooty #B0T\",\"player_id\":\"351e0f9e-38c6-57e1-ad5b-ab3656c068c5\",\"character\":\"\",\"rank\":0,\"locked\":false,\"team\":\"0\",\"local\":false,\"teammate\":false}"}},"feature":"match_info"}
+    
     """
     data = data.replace('\\"', '"')
     data = data.replace('\"[', '[')
     data = data.replace(']\"', ']')
-
+    data = data.replace('\"{', '{')
+    data = data.replace('}\"', '}')
     try:
         data = json.loads(data)
+        print(data)
         info = data["info"]
         print(info)
     except Exception as e:
-        print("Error parsing all_players:", e)
+        print("Error parsing data:", e)
         info = []
 
     print("Players count:", len(info))
     return {"status": "ok"}
 
+
 @app.get("/latest")
 def get_latest_data():
     """Fallback endpoint to fetch current state"""
     return latest_data
+
 
 @app.websocket("/ws")
 async def websocket_endpoint(ws: WebSocket):
