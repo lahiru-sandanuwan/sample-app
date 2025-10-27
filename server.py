@@ -28,11 +28,13 @@ class GameData(BaseModel):
 
 @app.post("/update")
 async def update(request: Request):
+    global latest_data
     body = await request.json()
     # data = body["string"]
     data = """
     
-    {"info":{"match_info":{"roster_1":"{\"name\":\"Chooty #B0T\",\"player_id\":\"351e0f9e-38c6-57e1-ad5b-ab3656c068c5\",\"character\":\"\",\"rank\":0,\"locked\":false,\"team\":\"0\",\"local\":false,\"teammate\":false}"}},"feature":"match_info"}
+    {"info":{"match_info":{"match_id":"5357784b-1257-4250-9ca7-17ebe9efdbfb"}},"feature":"match_info"}
+
     
     """
     data = data.replace('\\"', '"')
@@ -45,6 +47,7 @@ async def update(request: Request):
         print(data)
         info = data["info"]
         print(info)
+        latest_data = info
     except Exception as e:
         print("Error parsing data:", e)
         info = []
