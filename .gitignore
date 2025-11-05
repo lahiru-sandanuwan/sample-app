@@ -4,3 +4,4 @@ temp/
 .idea/
 __pycache__/
 venv/
+frontend/public/video.mp4
