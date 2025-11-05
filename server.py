@@ -31,6 +31,7 @@ async def update(request: Request):
     global latest_data
     body = await request.json()
     data = body["string"]
+    print(data)
 
     data = data.replace('\\"', '"')
     data = data.replace('\"[', '[')
@@ -48,6 +49,15 @@ async def update(request: Request):
         info = []
 
     print("Players count:", len(info))
+    return {"status": "ok"}
+
+@app.post("/updatePlayer")
+async def update(request: Request):
+    global latest_data
+    body = await request.json()
+    print(body)
+
+
     return {"status": "ok"}
 
 

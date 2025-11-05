@@ -1,0 +1,1507 @@
+{
+    "info": {
+        "info": {
+            "me": {
+                "player_name": "Chooty#EUW2"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "region": "lka"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "scene": "MainMenu"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "game_mode": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "map": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "map": "Range"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "game_mode": {
+                    "mode": "range",
+                    "custom": false,
+                    "ranked": "2"
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "match_id": "c9cf6f59-730b-4ea5-a191-3c329e74dfbd"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "scene": "Range"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "state": "WaitingToStart"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "team": "defense"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_number": "1"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "state": "InProgress"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "event": {
+        "name": "match_start",
+        "data": ""
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "match_outcome": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "pseudo_match_id": "91ec25d7-1a96-4aec-be21-3a4ab85f7990"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_phase": "combat"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "agent": "Phoenix_PC_C"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": "100"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "is_pbe": "false"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "agent": "Clay_PC_C"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "ui_team_order_allies": {
+                    1: "Raze"
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": "82"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": "64"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": "46"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": "28"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": "10"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": "8"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "death": {
+                "deaths": "1"
+            }
+        },
+        "feature": "death"
+    }
+}
+{
+    "event": {
+        "name": "death",
+        "data": "1"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "kill_feed": {
+                    "attacker": "Chooty",
+                    "victim": "Chooty",
+                    "is_attacker_teammate": true,
+                    "is_victim_teammate": true,
+                    "weapon": "TX_Clay_ClusterBomb",
+                    "ult": "",
+                    "assist1": "",
+                    "assist2": "",
+                    "assist3": "",
+                    "assist4": "",
+                    "headshot": false
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": "0"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "event": {
+        "name": "kill_feed",
+        "data": {
+            "attacker": "Chooty",
+            "victim": "Chooty",
+            "is_attacker_teammate": true,
+            "is_victim_teammate": true,
+            "weapon": "TX_Clay_ClusterBomb",
+            "ult": "",
+            "assist1": "",
+            "assist2": "",
+            "assist3": "",
+            "assist4": "",
+            "headshot": false
+        }
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": "100"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "scene": "Init"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "scene": "MainMenu"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "event": {
+        "name": "match_end",
+        "data": ""
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "health": None
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "agent": None
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "abilities": None
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "game_mode": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_number": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_report": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_phase": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "score": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "team": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "match_score": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "pseudo_match_id": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "map": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "ui_team_order_enemies": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "kill": {
+                "headshots": None
+            }
+        },
+        "feature": "kill"
+    }
+}
+{
+    "info": {
+        "info": {
+            "death": {
+                "deaths": None
+            }
+        },
+        "feature": "death"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "escalation_stage": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "game_mode": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "kill": {
+                "assists": None
+            }
+        },
+        "feature": "kill"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "map": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "kill": {
+                "kills": None
+            }
+        },
+        "feature": "kill"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "ui_team_order_allies": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "observing": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "scene": "CharacterSelectPersistentLevel"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "map": "Ascent"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "game_mode": {
+                    "mode": "bomb",
+                    "custom": true,
+                    "ranked": "2"
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "roster_0": {
+                    "name": "Chooty #EUW2",
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "character": "",
+                    "rank": 0,
+                    "locked": false,
+                    "local": true,
+                    "teammate": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "roster_0": {
+                    "name": "Chooty #EUW2",
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "character": "Clay",
+                    "rank": 0,
+                    "locked": false,
+                    "local": true,
+                    "teammate": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "roster_0": {
+                    "name": "Chooty #EUW2",
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "character": "Pandemic",
+                    "rank": 0,
+                    "locked": false,
+                    "local": true,
+                    "teammate": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "roster_0": {
+                    "name": "Chooty #EUW2",
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "character": "Clay",
+                    "rank": 0,
+                    "locked": false,
+                    "local": true,
+                    "teammate": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "roster_0": {
+                    "name": "Chooty #EUW2",
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "character": "Killjoy",
+                    "rank": 0,
+                    "locked": false,
+                    "local": true,
+                    "teammate": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "roster_0": {
+                    "name": "Chooty #EUW2",
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "character": "Killjoy",
+                    "rank": 0,
+                    "locked": true,
+                    "local": true,
+                    "teammate": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "match_id": "8a34688d-7abc-4093-94be-028c9fff0e20"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "scene": "Ascent"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "state": "WaitingToStart"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "team": "attack"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_number": "1"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": false,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 3,
+                    "weapon": "",
+                    "spike": false,
+                    "ult_points": 0,
+                    "ult_max": 0,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 0,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": false,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 3,
+                    "weapon": "knife",
+                    "spike": false,
+                    "ult_points": 0,
+                    "ult_max": 0,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 0,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_phase": "game_start"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "game_info": {
+                "state": "InProgress"
+            }
+        },
+        "feature": "game_info"
+    }
+}
+{
+    "event": {
+        "name": "match_start",
+        "data": ""
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "match_outcome": None
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "pseudo_match_id": "b9f14da3-8d2a-4d93-b4d0-a2239cd3809d"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "ui_team_order_allies": {
+                    1: "Killjoy"
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "agent": "Killjoy_PC_C"
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_phase": "shopping"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 3,
+                    "weapon": "knife",
+                    "spike": false,
+                    "ult_points": 0,
+                    "ult_max": 0,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 800,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "abilities": {
+                    "C": false,
+                    "Q": false,
+                    "E": true,
+                    "X": false
+                }
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 0,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": false,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 800,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 0,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": true,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 800,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "event": {
+        "name": "shop",
+        "data": "open"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "abilities": {
+                    "C": false,
+                    "Q": true,
+                    "E": true,
+                    "X": false
+                }
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 0,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": true,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 600,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "event": {
+        "name": "shop",
+        "data": "close"
+    }
+}
+{
+    "event": {
+        "name": "shop",
+        "data": "open"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "abilities": {
+                    "C": true,
+                    "Q": true,
+                    "E": true,
+                    "X": false
+                }
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 0,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": true,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 400,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "event": {
+        "name": "shop",
+        "data": "close"
+    }
+}
+{
+    "event": {
+        "name": "shop",
+        "data": "open"
+    }
+}
+{
+    "event": {
+        "name": "shop",
+        "data": "close"
+    }
+}
+{
+    "event": {
+        "name": "shop",
+        "data": "open"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 1,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": true,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 400,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 1,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": true,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 0,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 1,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": true,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 400,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 0,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": true,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 400,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 0,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": true,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 200,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "event": {
+        "name": "shop",
+        "data": "close"
+    }
+}
+{
+    "event": {
+        "name": "scoreboard_screen",
+        "data": "open"
+    }
+}
+{
+    "event": {
+        "name": "scoreboard_screen",
+        "data": "close"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_phase": "combat"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "abilities": {
+                    "C": false,
+                    "Q": true,
+                    "E": true,
+                    "X": false
+                }
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "abilities": {
+                    "C": false,
+                    "Q": true,
+                    "E": false,
+                    "X": false
+                }
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_phase": "end"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "match_score": {
+                    "team_0": 0,
+                    "team_1": 1
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "score": {
+                    "won": 0,
+                    "lost": 1
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_report": {
+                    "damage": 0,
+                    "hit": 0,
+                    "headshot": 0,
+                    "bodyshots": "0",
+                    "legshots": "0",
+                    "final_headshot": 0,
+                    "damage_received": "0",
+                    "ability_damage": "0"
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_number": "2"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_phase": "shopping"
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "me": {
+                "abilities": {
+                    "C": false,
+                    "Q": true,
+                    "E": true,
+                    "X": false
+                }
+            }
+        },
+        "feature": "me"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 0,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": false,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 200,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "scoreboard_0": {
+                    "name": "Chooty #EUW2",
+                    "character": "Killjoy",
+                    "teammate": true,
+                    "team": 0,
+                    "alive": true,
+                    "player_id": "6baf2aef-53f9-5d0d-a206-36db443d4548",
+                    "shield": 0,
+                    "weapon": "TX_Hud_Pistol_Classic",
+                    "spike": false,
+                    "ult_points": 0,
+                    "ult_max": 9,
+                    "kills": 0,
+                    "deaths": 0,
+                    "assists": 0,
+                    "money": 1200,
+                    "is_local": true
+                }
+            }
+        },
+        "feature": "match_info"
+    }
+}
+{
+    "info": {
+        "info": {
+            "match_info": {
+                "round_phase": "combat"
+            }
+        },
+        "feature": "match_info"
+    }
+}
