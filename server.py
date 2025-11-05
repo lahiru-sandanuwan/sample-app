@@ -30,13 +30,8 @@ class GameData(BaseModel):
 async def update(request: Request):
     global latest_data
     body = await request.json()
-    # data = body["string"]
-    data = """
-    
-    {"info":{"match_info":{"match_id":"5357784b-1257-4250-9ca7-17ebe9efdbfb"}},"feature":"match_info"}
+    data = body["string"]
 
-    
-    """
     data = data.replace('\\"', '"')
     data = data.replace('\"[', '[')
     data = data.replace(']\"', ']')

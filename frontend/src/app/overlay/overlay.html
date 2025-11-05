@@ -1,1 +1,89 @@
-<p>overlay works!</p>
+<div class="overlay-container">
+  <!-- Left side players -->
+  <div class="team left-team">
+    <!-- <div class="progress-circle">
+      <div class="center-icon">
+        <img src="icon.png" alt="icon" />
+      </div>
+    </div> -->
+
+    @for (player of leftPlayers.toReversed(); track $index) {
+    <div class="player-card">
+      <div class="top-row">
+        <div class="agent-icon">
+          <img [src]="getAgentImage(player.agent)" alt="" />
+        </div>
+        <div class="player-name">{{ player.name }}</div>
+        <div class="armour">
+          <img [src]="getArmourImage(player.armour)" alt="" />
+          <div class="amount">50</div>
+        </div>
+      </div>
+      <div class="health-bar">
+        <div class="health-fill" [ngClass]="player.team" [style.width.%]="player.health"></div>
+      </div>
+      <div class="bottom-row" [ngClass]="player.team">
+        <div class="ultimate"></div>
+        <div class="abilities">
+          <div class="ability">
+            <img src="" alt="" />
+          </div>
+          <div class="ability">
+            <img src="" alt="" />
+          </div>
+          <div class="ability">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="weap-creds">
+          <div class="weapon">
+            <img src="" alt="" />
+          </div>
+          <div class="creds">3050</div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+
+  <!-- Right side players -->
+  <div class="team right-team">
+    @for (player of rightPlayers.toReversed(); track $index) {
+    <div class="player-card">
+      <div class="top-row">
+        <div class="agent-icon">
+          <img [src]="getAgentImage(player.agent)" alt="" />
+        </div>
+        <div class="player-name">{{ player.name }}</div>
+        <div class="armour">
+          <img src="/armour/light.webp" alt="" />
+          <div class="amount">50</div>
+        </div>
+      </div>
+      <div class="health-bar">
+        <div class="health-fill" [ngClass]="player.team" [style.width.%]="player.health"></div>
+      </div>
+      <div class="bottom-row" [ngClass]="player.team">
+        <div class="ultimate"></div>
+        <div class="abilities">
+          <div class="ability">
+            <img src="" alt="" />
+          </div>
+          <div class="ability">
+            <img src="" alt="" />
+          </div>
+          <div class="ability">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="weap-creds">
+          <div class="weapon">
+            <img src="" alt="" />
+          </div>
+          <div class="creds">3050</div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
