@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PlayerCard } from '../components/player-card/player-card';
 
 interface Player {
   name: string;
@@ -12,7 +13,7 @@ interface Player {
 
 @Component({
   selector: 'app-overlay',
-  imports: [CommonModule],
+  imports: [CommonModule, PlayerCard],
   templateUrl: './overlay.html',
   styleUrl: './overlay.scss',
 })
@@ -22,50 +23,64 @@ export class Overlay implements OnInit {
       name: 'Chronicle',
       health: 100,
       weapon: 'stinger',
-      agent: 'cypher',
+      agent: 'Thorne',
       team: 'red',
-      armour: 'light',
+      armour: 'Light',
     },
-    { name: 'Kaajak', health: 100, weapon: 'sherif', agent: 'yoru', team: 'red', armour: 'heavy' },
-    { name: 'Boaster', health: 69, weapon: 'stinger', agent: 'omen', team: 'red', armour: 'regen' },
-    { name: 'Alfajer', health: 25, weapon: 'classic', agent: 'neon', team: 'red', armour: '' },
+    {
+      name: 'Kaajak',
+      health: 100,
+      weapon: 'sherif',
+      agent: 'Stealth',
+      team: 'red',
+      armour: 'Heavy',
+    },
+    {
+      name: 'Boaster',
+      health: 69,
+      weapon: 'stinger',
+      agent: 'Wraith',
+      team: 'red',
+      armour: 'Regen',
+    },
+    { name: 'Alfajer', health: 25, weapon: 'classic', agent: 'Sprinter', team: 'red', armour: '' },
     {
       name: 'Crashies',
       health: 88,
       weapon: 'stinger',
-      agent: 'fade',
+      agent: 'BountyHunter',
       team: 'red',
-      armour: 'heavy',
+      armour: 'Heavy',
     },
   ];
 
   rightPlayers: Player[] = [
-    { name: 'bang', health: 33, weapon: 'vandal', agent: 'jett', team: 'green', armour: 'heavy' },
+    { name: 'bang', health: 33, weapon: 'vandal', agent: 'Wushu', team: 'green', armour: 'Heavy' },
     {
       name: 'Zellsis',
       health: 100,
       weapon: 'phantom',
-      agent: 'killjoy',
+      agent: 'Killjoy',
       team: 'green',
-      armour: 'light',
+      armour: 'Light',
     },
     {
       name: 'zekken',
       health: 75,
       weapon: 'operator',
-      agent: 'raze',
+      agent: 'Clay',
       team: 'green',
-      armour: 'light',
+      armour: 'Light',
     },
     {
       name: 'johnqt',
       health: 100,
       weapon: 'spectre',
-      agent: 'cypher',
+      agent: 'Gumshoe',
       team: 'green',
-      armour: 'heavy',
+      armour: 'Heavy',
     },
-    { name: 'NARRATE', health: 10, weapon: 'classic', agent: 'sova', team: 'green', armour: '' },
+    { name: 'NARRATE', health: 10, weapon: 'classic', agent: 'Hunter', team: 'green', armour: '' },
   ];
 
   ngOnInit(): void {
