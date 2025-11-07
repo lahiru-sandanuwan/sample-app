@@ -21,6 +21,17 @@
 </div>
 <div class="arc-ring">
   <svg viewBox="0 0 100 100" class="arc-svg" aria-hidden="true">
-    <circle class="arc" cx="50" cy="50" r="40" pathLength="1" />
+    @for (segment of getArcSegments(); track $index) {
+    <circle
+      class="arc"
+      cx="50"
+      cy="50"
+      r="40"
+      pathLength="1"
+      [style.stroke]="segment.color"
+      [style.stroke-dasharray]="segment.dashArray"
+      [style.stroke-dashoffset]="segment.dashOffset"
+    />
+    }
   </svg>
 </div>

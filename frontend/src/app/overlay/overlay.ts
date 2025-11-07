@@ -18,6 +18,9 @@ interface Player {
   styleUrl: './overlay.scss',
 })
 export class Overlay implements OnInit {
+  arcCurves: number = 7; // Dynamic number of curves for the arc-ring
+  coloredSegments: number = 3; // Number of segments to color differently
+
   leftPlayers: Player[] = [
     {
       name: 'Chronicle',
@@ -111,5 +114,54 @@ export class Overlay implements OnInit {
 
   getArmourImage(armour: string) {
     return `/armour/${armour}.webp`;
+  }
+
+  getArcDashArray(): string {
+    // Calculate dash array for dynamic number of curves with constant gaps
+    const gapSize = 0.08; // Constant gap size (8% of circle circumference)
+    const totalGapSpace = this.arcCurves * gapSize;
+
+    // Ensure we don't exceed total available space
+    if (totalGapSpace >= 1) {
+      // If gaps would take all space, make minimal gaps
+      return `0.01 ${gapSize}`;
+    }
+
+    const totalDashSpace = 1 - totalGapSpace;
+    const dashSize = totalDashSpace / this.arcCurves;
+    return `${dashSize} ${gapSize}`;
+  }
+
+  getArcSegments(): any[] {
+    const gapSize = 0.08; // Constant gap size (8% of circle circumference)
+    const totalGapSpace = this.arcCurves * gapSize;
+
+    // Ensure we don't exceed total available space
+    if (totalGapSpace >= 1) {
+      return [];
+    }
+
+    const totalDashSpace = 1 - totalGapSpace;
+    const dashSize = totalDashSpace / this.arcCurves;
+    const segmentSpacing = dashSize + gapSize; // Total space per segment
+
+    // Find which segment contains the top position (12 o'clock = 0.75 in normalized coords)
+    const topPosition = 0.75;
+    const topSegmentIndex = Math.floor(topPosition * this.arcCurves);
+
+    const segments = [];
+    for (let i = 0; i < this.arcCurves; i++) {
+      // Calculate how many segments from the top this segment is
+      const distanceFromTop = (i - topSegmentIndex + this.arcCurves) % this.arcCurves;
+      const isColored = distanceFromTop < this.coloredSegments;
+
+      segments.push({
+        color: isColored ? '#ff6b6b' : '#6c5ce7', // Red for segments starting from top, purple for rest
+        dashArray: `${dashSize} ${1 - dashSize}`, // Show only the dash part
+        dashOffset: -i * segmentSpacing, // Position each segment correctly
+      });
+    }
+
+    return segments;
   }
 }

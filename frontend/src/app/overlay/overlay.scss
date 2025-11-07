@@ -162,3 +162,20 @@
   width: 40%;
   opacity: 0.9;
 }
+
+.arc-ring {
+  width: 200px;
+  aspect-ratio: 1;
+}
+.arc-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.arc {
+  fill: none;
+  // stroke: #6c5ce7;
+  stroke-width: 12;
+  stroke-linecap: round;
+}
