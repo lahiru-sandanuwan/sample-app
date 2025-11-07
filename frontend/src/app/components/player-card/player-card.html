@@ -13,16 +13,18 @@
     <div class="health-fill" [ngClass]="player.team" [style.width.%]="player.health"></div>
   </div>
   <div class="bottom-row" [ngClass]="player.team">
-    <div class="ultimate"></div>
+    <div class="ultimate">
+      <app-ultimate-tracker [player]="player"></app-ultimate-tracker>
+    </div>
     <div class="abilities">
       <div class="ability">
-        <img src="" alt="" />
+        <img [src]="getAbility1Image(player.agent)" alt="" />
       </div>
       <div class="ability">
-        <img src="" alt="" />
+        <img [src]="getAbility2Image(player.agent)" alt="" />
       </div>
       <div class="ability">
-        <img src="" alt="" />
+        <img [src]="getAbility3Image(player.agent)" alt="" />
       </div>
     </div>
     <div class="weap-creds">
