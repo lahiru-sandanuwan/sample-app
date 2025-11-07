@@ -10,7 +10,7 @@ import { UltimateTracker } from '../ultimate-tracker/ultimate-tracker';
 })
 export class PlayerCard {
   @Input() player: any;
-  @Input() side: string = 'green';
+  @Input() side: string = 'left';
 
   getAgentImage(agent: string) {
     return `/assets/agents/${agent}Icon.webp`;
@@ -30,5 +30,9 @@ export class PlayerCard {
 
   getAbility3Image(agent: string) {
     return `/assets/grenades/${agent}Grenade.webp`;
+  }
+
+  getWeaponImage(weapon: string) {
+    return `/assets/weapons/${weapon}Killfeed.webp`;
   }
 }

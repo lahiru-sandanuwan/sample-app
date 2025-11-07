@@ -20,11 +20,13 @@ interface Player {
   styleUrl: './overlay.scss',
 })
 export class Overlay implements OnInit {
+  LEFT = 'left';
+  RIGHT = 'right';
   leftPlayers: Player[] = [
     {
       name: 'Chronicle',
       health: 100,
-      weapon: 'stinger',
+      weapon: 'Stinger',
       agent: 'Thorne',
       team: 'red',
       armour: 'Light',
@@ -34,7 +36,7 @@ export class Overlay implements OnInit {
     {
       name: 'Kaajak',
       health: 100,
-      weapon: 'sherif',
+      weapon: 'Sheriff',
       agent: 'Stealth',
       team: 'red',
       armour: 'Heavy',
@@ -44,7 +46,7 @@ export class Overlay implements OnInit {
     {
       name: 'Boaster',
       health: 69,
-      weapon: 'stinger',
+      weapon: 'Stinger',
       agent: 'Wraith',
       team: 'red',
       armour: 'Regen',
@@ -54,7 +56,7 @@ export class Overlay implements OnInit {
     {
       name: 'Alfajer',
       health: 25,
-      weapon: 'classic',
+      weapon: 'Classic',
       agent: 'Sprinter',
       team: 'red',
       armour: '',
@@ -64,7 +66,7 @@ export class Overlay implements OnInit {
     {
       name: 'Crashies',
       health: 88,
-      weapon: 'stinger',
+      weapon: 'Stinger',
       agent: 'BountyHunter',
       team: 'red',
       armour: 'Heavy',
@@ -77,7 +79,7 @@ export class Overlay implements OnInit {
     {
       name: 'bang',
       health: 33,
-      weapon: 'vandal',
+      weapon: 'Vandal',
       agent: 'Wushu',
       team: 'green',
       armour: 'Heavy',
@@ -87,7 +89,7 @@ export class Overlay implements OnInit {
     {
       name: 'Zellsis',
       health: 100,
-      weapon: 'phantom',
+      weapon: 'Phantom',
       agent: 'Killjoy',
       team: 'green',
       armour: 'Light',
@@ -97,7 +99,7 @@ export class Overlay implements OnInit {
     {
       name: 'zekken',
       health: 75,
-      weapon: 'operator',
+      weapon: 'Operator',
       agent: 'Clay',
       team: 'green',
       armour: 'Light',
@@ -107,7 +109,7 @@ export class Overlay implements OnInit {
     {
       name: 'johnqt',
       health: 100,
-      weapon: 'spectre',
+      weapon: 'Spectre',
       agent: 'Gumshoe',
       team: 'green',
       armour: 'Heavy',
@@ -117,7 +119,7 @@ export class Overlay implements OnInit {
     {
       name: 'NARRATE',
       health: 10,
-      weapon: 'classic',
+      weapon: 'Classic',
       agent: 'Hunter',
       team: 'green',
       armour: '',

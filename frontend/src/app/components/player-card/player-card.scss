@@ -1,36 +1,3 @@
-.overlay-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 16px;
-  box-sizing: border-box;
-  // background: rgba(0, 0, 0, 1);
-  //   background-image: url('/valorant.png');
-  // background-image: url('/valorant.jpg');
-  background-size: cover;
-}
-
-.team {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 16px;
-  width: 312px;
-}
-
-.left-team {
-  align-items: flex-start;
-}
-
-.right-team {
-  align-items: flex-end;
-}
-
 .player-card {
   border-radius: 2px;
   color: white;
@@ -47,6 +14,28 @@
     display: flex;
     align-items: center;
     height: 38px;
+
+    &.right {
+      flex-direction: row-reverse;
+
+      .agent-icon {
+        margin-right: 2px;
+
+        img {
+          transform: scaleX(-1);
+        }
+      }
+
+      .player-name {
+        margin-right: 10px;
+      }
+
+      .armour {
+        flex-direction: row-reverse;
+        margin-left: 5px;
+        margin-right: auto;
+      }
+    }
 
     .agent-icon {
       margin-left: 2px;
@@ -92,6 +81,44 @@
     align-items: center;
     height: 45px;
 
+    &.right {
+      flex-direction: row-reverse;
+
+      .ultimate {
+        margin-right: 4px;
+        margin-left: 0;
+      }
+
+      .abilities {
+        flex-direction: row-reverse;
+        margin-left: 0;
+        margin-right: 25px;
+      }
+
+      .weap-creds {
+        margin-right: auto;
+        margin-left: 4px;
+        gap: 10px;
+        flex-direction: row-reverse;
+
+        .weapon {
+          img {
+            height: 15px;
+            transform: none;
+          }
+        }
+
+        .creds {
+          gap: 4px;
+
+          img {
+            height: 12px;
+            width: 12px;
+          }
+        }
+      }
+    }
+
     .ultimate {
       margin-left: 4px;
     }
@@ -105,6 +132,31 @@
         height: 25px;
       }
     }
+
+    .weap-creds {
+      margin-left: auto;
+      display: flex;
+      gap: 10px;
+      margin-right: 4px;
+
+      .weapon {
+        img {
+          height: 15px;
+          transform: scaleX(-1);
+        }
+      }
+
+      .creds {
+        display: flex;
+        align-items: flex-end;
+        gap: 4px;
+
+        img {
+          height: 12px;
+          width: 12px;
+        }
+      }
+    }
   }
 }
 
@@ -116,6 +168,10 @@
   width: 100%;
   height: 7px;
   overflow: hidden;
+
+  &.right {
+    transform: scaleX(-1);
+  }
 }
 
 .health-fill {
@@ -134,46 +190,4 @@
 .agent {
   font-size: 10px;
   color: #ccc;
-}
-
-.progress-circle {
-  --size: 80px;
-  --thickness: 6px;
-  --progress: 70; /* 0–100 */
-  --segments: 8;
-  --gap: 8deg;
-
-  position: relative;
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: conic-gradient(#00ff99 calc(var(--progress) * 1%), transparent 0);
-  mask: repeating-conic-gradient(
-    #000 0 calc((360deg / var(--segments)) - var(--gap)),
-    transparent 0 calc(360deg / var(--segments))
-  );
-  -webkit-mask: repeating-conic-gradient(
-    #000 0 calc((360deg / var(--segments)) - var(--gap)),
-    transparent 0 calc(360deg / var(--segments))
-  );
-}
-
-.center-icon {
-  position: absolute;
-  width: calc(var(--size) - var(--thickness) * 4);
-  height: calc(var(--size) - var(--thickness) * 4);
-  background-color: #1a1a1a;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.center-icon img {
-  width: 40%;
-  opacity: 0.9;
 }

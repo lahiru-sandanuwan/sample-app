@@ -8,14 +8,14 @@
     </div> -->
 
     @for (player of leftPlayers.toReversed(); track $index) {
-    <app-player-card [player]="player"></app-player-card>
+    <app-player-card [player]="player" [side]="LEFT"></app-player-card>
     }
   </div>
 
   <!-- Right side players -->
   <div class="team right-team">
     @for (player of rightPlayers.toReversed(); track $index) {
-    <app-player-card [player]="player"></app-player-card>
+    <app-player-card [player]="player" [side]="RIGHT"></app-player-card>
     }
   </div>
 </div>
