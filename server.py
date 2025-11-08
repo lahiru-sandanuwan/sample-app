@@ -51,12 +51,22 @@ async def update(request: Request):
     print("Players count:", len(info))
     return {"status": "ok"}
 
-@app.post("/updatePlayer")
+
+@app.post("/playerEvents")
 async def update(request: Request):
     global latest_data
     body = await request.json()
-    print(body)
+    print("player event", body)
 
+    return {"status": "ok"}
+
+
+@app.post("/gameEvents")
+async def update(request: Request):
+    global latest_data
+    body = await request.json()
+    print("game event", body)
+    # print(body)
 
     return {"status": "ok"}
 

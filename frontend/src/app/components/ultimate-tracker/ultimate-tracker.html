@@ -1,6 +1,9 @@
 <div class="arc-ring">
   <svg viewBox="0 0 100 100" class="arc-svg" aria-hidden="true">
-    @for (segment of getArcSegments(); track $index) {
+    @if (player.maxUltPoints == player.currUltPoints) {
+    <circle class="arc full" cx="50" cy="50" r="40" [style.stroke]="'#fff'" pathLength="1" />
+
+    }@else { @for (segment of getArcSegments(); track $index) {
     <circle
       class="arc"
       cx="50"
@@ -11,7 +14,7 @@
       [style.stroke-dasharray]="segment.dashArray"
       [style.stroke-dashoffset]="segment.dashOffset"
     />
-    }
+    } }
   </svg>
   <img [src]="getUltimate(player.agent)" alt="" />
 </div>
